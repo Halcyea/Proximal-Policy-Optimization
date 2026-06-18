@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"Get-NetTCPConnection -OwningProcess 18380 -ErrorAction SilentlyContinue | Format-Table LocalAddress,LocalPort,RemoteAddress,RemotePort,State -AutoSize\")",
+      "Bash(netstat -ano)"
+    ]
+  }
+}
